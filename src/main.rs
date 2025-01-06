@@ -231,9 +231,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     let sample_period: f64 = args[2].parse()?;
     let data_type = &args[3];
 
-    println!("Input file: {}", input_file);
-    println!("Sample period: {}", sample_period);
-    println!("Data type: {}", data_type);
+    println!("# Input file: {}", input_file);
+    println!("# Sample period: {}", sample_period);
+    println!("# Data type: {}", data_type);
 
     if !Path::new(input_file).exists() {
         return Err("Input file not found.".into());
